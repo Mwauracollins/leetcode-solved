@@ -8,13 +8,14 @@ class Solution(object):
             return False
         number = str(x)
         length = len(number)
-        
+
         for i in range(length // 2):
-            if number[i] != number[length-1-i]:
+            if number[i] != number[length - 1 - i]:
                 return False
-            
+
         return True
 
-test = Solution()
-ress = test.isPalindrome(1221)
-print(ress)
+
+s = Solution()
+test = s.isPalindrome(121921)
+print(test)
